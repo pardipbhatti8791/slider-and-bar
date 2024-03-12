@@ -24,9 +24,10 @@ const ScaleBar: React.FC = () => {
         <div
           key={num}
           style={{ width: num * 50 + "px" }}
-          className={`h-7 flex items-center justify-center border border-gray-400 rounded-tl-xl rounded-tr-xl cursor-pointer rounded-b-3xl ${
+          className={`scale-bar-item-3 h-7 flex items-center justify-center border border-gray-400 rounded-tl-xl rounded-tr-xl cursor-pointer rounded-b-3xl ${
             num <= selected ? "bg-white text-white" : "bg-bar-1"
           }`}
+          data-testid={`bar-${num}`}
           onClick={() => handleSelect(num)}
         />
       ))}

@@ -48,6 +48,7 @@ export const SliderComponent = () => {
               initial="hidden"
               animate="visible"
               variants={circleVariants}
+              data-testid="animated-circle"
             />
           </svg>
           <motion.span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-lg font-bold text-white">
